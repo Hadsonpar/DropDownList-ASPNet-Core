@@ -22,13 +22,12 @@
                 <form method="post" asp-controller="Home" asp-action="Index" class="text-center">
                     <div class="row">
                         <div class="col-md-5">
-                            <select id="ddlDept" name="Id" asp-for="Id" asp-items="@(new SelectList(ViewBag.Departments,"Id","Nivel"))" class="form-control" onchange="SetDept()">
+                            <select id="ddlDept" name="Id" asp-for="Id" asp-items="@(new SelectList(ViewBag.NivelSeguridads,"Id","Nivel"))" class="form-control" onchange="SetDept()">
                                 <option value="0">Please select Security Level</option>
                             </select>
                         </div>
                     </div>
                 </form>
             </div>
-        </div>
-    
+        </div>    
 </div>

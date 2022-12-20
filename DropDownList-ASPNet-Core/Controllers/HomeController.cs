@@ -23,11 +23,11 @@ namespace DropDownList_ASPNet_Core.Controllers
                 
         public IActionResult Index()
         {
-            ViewBag.Departments = GetDepartmentDetails();
+            ViewBag.NivelSeguridads = GetNivelSeguridads();
             return View();
         }
        
-        private List<ClsNivelSeguridad> GetDepartmentDetails()
+        private List<ClsNivelSeguridad> GetNivelSeguridads()
         {   
             string connectionString = Configuration["ConnectionStrings:DefaultConnection"];
 
